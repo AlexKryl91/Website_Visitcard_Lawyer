@@ -1,0 +1,75 @@
+:root {
+  // main colors
+  --color-white: #f6f4f3;
+  --color-ink-1: #2c2e3a;
+  --color-ink-2: #3e4156;
+  --color-ink-3: #545876;
+  --color-ink-4: #535876;
+  --color-beige-1: #c1b4a3;
+  --color-beige-2: #e1cfab;
+  --color-beige-3: #bfa779;
+  --color-beige-4: #b09971;
+  --color-beige-5: #ae9c79;
+  --color-beige-6: #736d5e;
+
+  // transparent colors
+  --color-tr-shadow: #0000004d;
+  --color-glow: #cfe1ff99;
+
+  // text colors
+  --color-text-accent-1: #6a6049;
+
+  // backgrounds
+  --bg-body: #181b1f;
+  --bg-section-exp: linear-gradient(
+    180deg,
+    var(--color-beige-2) 0%,
+    var(--color-beige-5) 100%
+  );
+  --bg-card: #e8e5e1;
+
+  --bg-stripe-dark: linear-gradient(
+    90deg,
+    transparent 0%,
+    #345676 50%,
+    transparent 100%
+  );
+
+  --bg-stripe-light: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--color-beige-2) 50%,
+    transparent 100%
+  );
+
+  --bg-footer: linear-gradient(90deg, var(var(--color-ink-1)) 0%, #17181d 100%);
+
+  // shadows
+  --shadow-section: 0 -16px 16px #00000040;
+  --shadow-card-light: 4px 6px 6px #00000040;
+  --shadow-card-dark: -4px 6px 6px #00000040;
+
+  // mask
+  --mask-gradient: linear-gradient(
+    90deg,
+    transparent 0%,
+    #ffffff 10%,
+    #ffffff 90%,
+    transparent 100%
+  );
+
+  // fonts
+  --font-family-text: 'Inter', Arial, Verdana, sans-serif;
+  --font-family-header: 'Bitter', Arial, Verdana, serif;
+  --font-family-accent: 'Georgia', Verdana, serif;
+
+  // common style
+  --desktop-max-width: 1280px;
+  --xxl-max-width: 1680px;
+  --container-max-width: 1040px;
+  --side-spacing: 75px;
+  --navbar-height: 90px;
+
+  // for effects
+  --transition-duration: 0.3s;
+}

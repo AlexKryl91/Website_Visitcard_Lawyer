@@ -1,0 +1,11 @@
+main {
+  width: 100%;
+  max-width: var(--desktop-max-width);
+  margin: auto;
+}
+
+@import './section_intro.scss';
+@import './sections.scss';
+@import './section_about.scss';
+@import './section_products.scss';
+@import './section_ejectors.scss';

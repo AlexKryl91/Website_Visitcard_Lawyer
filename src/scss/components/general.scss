@@ -1,0 +1,47 @@
+html {
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  // Track
+  &::-webkit-scrollbar-track {
+    background: var(--color-bg-footer-end);
+  }
+
+  // Handle
+  &::-webkit-scrollbar-thumb {
+    background: var(--color-bg-darkblue);
+    border-radius: var(--border-radius-small);
+    border-radius: 6px;
+
+    &:hover {
+      background: var(--bg-section);
+    }
+  }
+}
+
+body {
+  background: var(--bg-body);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  font-family: var(--font-family-base);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-text-base);
+
+  overflow-x: hidden;
+}
+
+a,
+a:visited,
+a:focus {
+  color: var(--color-text-base);
+}
+
+ul {
+  list-style: none;
+}

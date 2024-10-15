@@ -1,0 +1,25 @@
+.btn-up {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  border-radius: 16px;
+  bottom: 30px;
+  right: 30px;
+  background: var(--color-bg-darkblue);
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-duration);
+
+  &__arrow {
+    width: 100%;
+    height: 100%;
+    fill: var(--color-points-light);
+  }
+}
+
+.btn-up_visible {
+  opacity: 0.5;
+  pointer-events: all;
+}
