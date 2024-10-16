@@ -1,48 +1,30 @@
 .section {
   width: 100%;
-  padding: 60px var(--side-spacing) 100px;
+  padding: 65px var(--side-spacing) 120px;
 
-  font-size: 1.25rem;
-  line-height: 1.2;
-  font-weight: 300;
-
-  &_blue {
-    position: relative;
-    background: var(--bg-section);
-    box-shadow: 0 -10px 10px var(--color-tr-shadow);
-  }
-
-  &__header {
-    font-weight: bold;
-    font-size: 2rem;
+  &__header_dark,
+  &__header_light {
+    font-size: 42px;
     font-family: var(--font-family-header);
     text-align: center;
-    text-wrap: nowrap;
   }
 
-  &__header-wrapper {
+  &__header_dark {
+    color: var(--color-ink-1);
+  }
+
+  &__stripe_dark,
+  &__stripe_light {
     width: 100%;
-    display: flex;
-    column-gap: 60px;
-    flex-wrap: nowrap;
+    max-width: 600px;
+    height: 6px;
+    margin: 50px auto 60px;
   }
 
-  .stripe-left,
-  .stripe-right {
-    width: 100%;
-    height: 12px;
-    margin-top: 15px;
+  &__stripe_dark {
+    background: var(--bg-stripe-dark);
   }
-  .stripe-left {
-    background: var(--bg-stripe-left);
-  }
-  .stripe-right {
-    background: var(--bg-stripe-right);
-  }
-
-  .subheader {
-    font-family: var(--font-family-header);
-    text-align: center;
-    margin-top: 46px;
+  &__stripe_light {
+    background: var(--bg-stripe-light);
   }
 }

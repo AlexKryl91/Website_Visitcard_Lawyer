@@ -8,10 +8,10 @@
     <meta name="keywords" content="" />
     <meta name="author" content="© Вторушин Сергей Александрович" />
     <meta name="robots" content="all" />
-    <title>Адвокат Сергей Вторушин</title>
+    <title>Адвокат Вторушин Сергей Александрович</title>
 
     <!-- <meta property="og:type" content="website" />
-    <meta property="og:title" content="Ejector Systems" />
+    <meta property="og:title" content="Адвокат Вторушин Сергей Александрович" />
     <meta property="og:url" content="https://www.ejectorsystems.ru/" />
     <meta
       property="og:description"
@@ -45,7 +45,8 @@
     /> -->
 
     <link rel="icon" href="/favicon/favicon.ico" />
-    <!-- <link
+
+    <link
       rel="preload"
       href="/img/intro_bg.avif"
       as="image"
@@ -53,32 +54,27 @@
     />
     <link
       rel="preload"
-      href="/fonts/CenturyGothic-Bold.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
+      href="/img/intro_photo.avif"
+      as="image"
+      type="image/avif"
     />
-    <link
-      rel="preload"
-      href="/fonts/CenturyGothic.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-    <link
+
+    <!-- <link
       rel="preload"
       href="/fonts/Inter-Light.woff2"
       as="font"
       type="font/woff2"
       crossorigin
-    />
-    <link
+    /> -->
+
+    <!-- <link
       rel="preload"
       href="/fonts/Inter-LightItalic.woff2"
       as="font"
       type="font/woff2"
       crossorigin
-    />
+    /> -->
+
     <link
       rel="preload"
       href="/fonts/Inter-Bold.woff2"
@@ -86,6 +82,7 @@
       type="font/woff2"
       crossorigin
     />
+
     <link
       rel="preload"
       href="/fonts/Inter-Regular.woff2"
@@ -93,13 +90,38 @@
       type="font/woff2"
       crossorigin
     />
-    <link
+
+    <!-- <link
       rel="preload"
       href="/fonts/Inter-ExtraLight.woff2"
       as="font"
       type="font/woff2"
       crossorigin
     /> -->
+
+    <link
+      rel="preload"
+      href="/fonts/Georgia.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link
+      rel="preload"
+      href="/fonts/Georgia-Italic.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link
+      rel="preload"
+      href="/fonts/Bitter-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
   </head>
   <body>
     <div class="preloader">
@@ -115,8 +137,10 @@
             width="54"
             height="60"
           />
-          <div class="logo__maintext">Вторушин Сергей</div>
-          <div class="logo__subtext">Адвокат</div>
+          <div class="logo__text">
+            <div class="logo__text__main">Вторушин Сергей</div>
+            <div class="logo__text__sub">Адвокат</div>
+          </div>
         </div>
         <ul class="menu__list">
           <li class="menu__list__item">
@@ -159,101 +183,164 @@
     </header>
     <main>
       <section class="intro">
+        <h1 class="visually-hidden">
+          Официальный сайт адвоката Сергея Александровича Вторушина
+        </h1>
         <div class="intro__content">
-          <h1 class="visually-hidden">
-            Официальный сайт адвоката Сергея Александровича Вторушина
-          </h1>
-          <h2>Вторушин Сергей Александрович</h2>
+          <h2 class="intro__header">Вторушин Сергей Александрович</h2>
           <div class="intro__stripe"></div>
-          <img src="" alt="">
-          <h3>Адвокат</h3>
-          <p class="slogan">"Защищая Ваши права, укрепляю Ваше будущее."</p>
+          <div class="intro__sub-wrapper">
+            <img
+              src="/img/law.svg"
+              alt="Весы правосудия. Иконка"
+              width="95"
+              height="90"
+            />
+            <div>
+              <h3 class="intro__subheader">Адвокат</h3>
+              <p class="intro__slogan">
+                "Защищая Ваши права, укрепляю Ваше будущее."
+              </p>
+            </div>
+          </div>
         </div>
         <picture>
-          <source srcset="/img/intro_ejector.avif" type="image/avif" />
-          <source srcset="/img/intro_ejector.webp" type="image/webp" />
+          <source srcset="/img/intro_photo.avif" type="image/avif" />
+          <source srcset="/img/intro_photo.webp" type="image/webp" />
           <img
             class="intro__img"
-            src="/img/intro_ejector.png"
-            alt="Эжектор из нержавеющей стали"
-            width="504"
-            height="416"
+            src="/img/intro_photo.png"
+            alt="Фотография Сергея Александровича Вторушина"
+            width="550"
+            height="560"
           />
         </picture>
       </section>
 
-      <section id="about" class="section section_blue">
-        <div class="section__header-wrapper">
-          <div class="stripe-left"></div>
-          <h3 class="section__header">О компании</h3>
-          <div class="stripe-right"></div>
-        </div>
-        <p class="subheader">
-          Наша специализация – эжекторы различного типа и назначения, а также
-          построенные на их основе системы
-        </p>
-        <ul class="about__list">
-          <li class="about__list__item">
-            <img
-              src="/img/engineer.svg"
-              alt="Иконка. Команда специалистов"
-              class="about__list__item__icon"
-              width="127"
-              height="120"
-            />
-            <p class="about__list__item__text">
-              Наша команда состоит из высококвалифицированных специалистов,
-              имеющих многолетний опыт проектирования, изготовления, внедрения и
-              эксплуатации эжекторного и вспомогательного оборудования
-              промышленных предприятий. Например, паровых эжекторов откачки
-              газов из технологического оборудования, жидкостных эжекторов
-              повышения технологического давления жидкостей, воздушных эжекторов
-              систем вентиляции, систем создания вакуума для перегонки мазута
-              или вакуумной сушки, струйно-компрессорных установок для сжатия
-              факельных газов или низконапорных газов газоконденсатных
-              месторождений и многих других.
-            </p>
+      <section id="exp" class="section">
+        <h2 class="section__header_dark">Опыт работы и практика</h2>
+        <div class="section__stripe_dark"></div>
+        <ul class="exp__list">
+          <li class="exp__list__item">
+            <svg
+              class="item-corner"
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              fill="#3E4156"
+            >
+              <path d="M28 0v28A56.6 56.6 0 0 0 0 0h28Z" />
+            </svg>
+            <div class="item-container">
+              <div class="item-card h-card">
+                <div class="item-card__text">19+<br />лет опыта</div>
+              </div>
+              <div class="item-text">
+                <p>Работаю адвокатом в г. Улан-Удэ с 2005 года.</p>
+                <p>
+                  Специализируюсь по широкому спектру уголовных, гражданских и
+                  административных дел, а также провожу юридические консультации
+                  уже более 19 лет.
+                </p>
+              </div>
+            </div>
           </li>
-          <li>
-            <div class="stripe-left" role="separator"></div>
+
+          <li class="exp__list__item">
+            <svg
+              class="item-corner"
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              fill="#3E4156"
+            >
+              <path d="M28 0v28A56.6 56.6 0 0 0 0 0h28Z" />
+            </svg>
+            <div class="item-container">
+              <div class="item-card h-card">
+                <img
+                  src="/img/fpa_logo.png"
+                  alt="Логотип Федеральной палаты адвокатов"
+                  width="74"
+                  height="80"
+                />
+                <img
+                  src="/img/urist_logo.png"
+                  alt="Логотип Адвокатской конторы «Юрист»"
+                  width="128"
+                  height="60"
+                />
+              </div>
+              <div class="item-text">
+                <p>
+                  Являюсь адвокатом
+                  <a href="https://apbur03.fparf.ru" target="_blank"
+                    >Коллегии адвокатов Республики Бурятия</a
+                  >
+                </p>
+                <p>
+                  Номер в реестре адвокатов Республики Бурятия:
+                  <a
+                    href="https://apbur03.fparf.ru/about/lawyers/vtorushin-sergey-aleksandrovich/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >04/488</a
+                  >
+                </p>
+                <p>Адвокатская контора «Юрист»</p>
+              </div>
+            </div>
           </li>
-          <li class="about__list__item">
-            <img
-              src="/img/experience.svg"
-              alt="Иконка. Большой опыт"
-              class="about__list__item__icon"
-              width="121"
-              height="130"
-            />
-            <p class="about__list__item__text">
-              Мы имеем богатый опыт экспериментальной стендовой отработки
-              эжекторов различного типа, что позволило нам оптимизировать
-              физические процессы, происходящие в них, и значительно повысить их
-              эффективность.
-            </p>
-          </li>
-          <li>
-            <div class="stripe-left" role="separator"></div>
-          </li>
-          <li class="about__list__item">
-            <img
-              src="/img/knowledge.svg"
-              alt="Иконка. Профессиональные знания"
-              class="about__list__item__icon"
-              width="114"
-              height="120"
-            />
-            <p class="about__list__item__text">
-              Наши знания и опыт позволяют проектировать и изготавливать
-              высокоэффективные эжекторы и системы на их основе, повышающие
-              производительность, экономичность и конкурентность Ваших
-              производств.
-            </p>
+
+          <li class="exp__list__item">
+            <svg
+              class="item-corner"
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              fill="#3E4156"
+            >
+              <path d="M28 0v28A56.6 56.6 0 0 0 0 0h28Z" />
+            </svg>
+            <div class="item-container">
+              <div class="v-card-wrapper">
+                <div class="item-card v-card">
+                  <img
+                    src="/img/certificate_1_small.jpg"
+                    alt="Почетная грамота"
+                    width="160"
+                    height="240"
+                  />
+                </div>
+                <div class="item-card v-card">
+                  <img
+                    src="/img/certificate_2_small.jpg"
+                    alt="Бладорственное письмо"
+                    width="160"
+                    height="230"
+                  />
+                </div>
+              </div>
+              <div class="item-text">
+                <p>Мои профессиональные навыки отмечены:</p>
+                <ul class="item-text__list">
+                  <li>
+                    Благодарственным письмом Адвокатской палаты Республика
+                    Бурятия
+                  </li>
+                  <li>
+                    Почётной грамотой Федеральной палаты адвокатов Российской
+                    Федерации
+                  </li>
+                </ul>
+              </div>
+            </div>
           </li>
         </ul>
       </section>
 
-      <section id="products" class="section">
+      <!--
+      <section id="spec" class="section">
         <picture>
           <source srcset="/img/products_bg_decal.avif" type="image/avif" />
           <img
@@ -471,121 +558,9 @@
         </p>
       </section>
 
-      <section id="ejectors" class="section section_blue">
-        <picture>
-          <source srcset="/img/ejectors_bg_decal.avif" type="image/avif" />
-          <source srcset="/img/ejectors_bg_decal.webp" type="image/webp" />
-          <img
-            src="/img/ejectors_bg_decal.png"
-            alt="Фоновое изображение контура эжекторной системы"
-            class="ejectors__decal"
-            width="700"
-            height="730"
-            loading="lazy"
-          />
-        </picture>
-        <div class="section__header-wrapper">
-          <div class="stripe-left"></div>
-          <h3 class="section__header">Об эжекторах</h3>
-          <div class="stripe-right"></div>
-        </div>
-        <p class="subheader">
-          Принцип работы эжекторов и описание основных видов
-        </p>
-        <div class="scheme-wrapper">
-          <img
-            src="/img/ejector_scheme.svg"
-            alt="Схема устройства эжектора в изометрии"
-            class="scheme"
-            width="1130"
-            height="530"
-            loading="lazy"
-          />
-        </div>
-
-        <div class="ejectors__subsection" role="region">
-          <h4 class="ejectors__subheadings">
-            Что из себя представляет эжектор?
-          </h4>
-          <p class="ejectors__description">
-            Эжектор – это устройство, в проточном канале которого происходит
-            смешение двух сред, сопровождающееся увеличением давления
-            низконапорного (пассивного) потока за счёт энергии высоконапорного
-            (активного) потока. Принцип работы основан на законе Бернулли, из
-            которого следует, что создавая в сужающемся сечении пониженное
-            давление одной среды, мы вызываем подкачивание другой.
-          </p>
-        </div>
-        <div class="ejectors__subsection" role="region">
-          <h4 class="ejectors__subheadings">Виды эжекторов</h4>
-          <p class="ejectors__description">
-            В соответствии с видами рабочих сред, эжекторы можно разделить на
-            несколько основных видов:
-          </p>
-          <ul class="ejectors__list">
-            <li class="ejectors__list__item">
-              Жидкостные – случай, когда обе рабочие среды являются жидкостями.
-            </li>
-            <li class="ejectors__list__item">
-              Жидкостно-газовые – в аппаратах этого типа высоконапорный
-              (активный) поток является жидкостью, а низконапорный (пассивный) –
-              газом, паром либо их смесью.
-            </li>
-            <li class="ejectors__list__item">
-              Паро-жидкостные – в данных аппаратах активный поток пара
-              используется для откачивания пассивного потока жидкости.
-            </li>
-            <li class="ejectors__list__item">
-              Газовые или паровые – как нетрудно догадаться, рабочими средами в
-              данном случае являются газы, пары либо их смеси.
-            </li>
-            <li class="ejectors__list__item">
-              Специального назначения – аппараты, специально разработанные под
-              особые условия работы (например, глубоководная откачка ила и
-              песка, смешивание химически реагирующих смесей и другие).
-            </li>
-          </ul>
-        </div>
-        <div class="ejectors__subsection" role="region">
-          <h4 class="ejectors__subheadings">
-            Ключевые качественные характеристики
-          </h4>
-          <ul class="ejectors__list">
-            <li class="ejectors__list__item">
-              В жидкостно-газовых аппаратах дополнительно можно осуществлять
-              конденсацию паров на струе рабочей жидкости
-            </li>
-            <li class="ejectors__list__item">
-              Низкая чувствительность к наличию в откачиваемой среде жидких и
-              твердых частиц
-            </li>
-            <li class="ejectors__list__item">
-              Огромная область применения за счет универсальности и
-              вариативности рабочих сред
-            </li>
-            <li class="ejectors__list__item">
-              Теоретически неограниченный диапазон производительности по откачке
-            </li>
-            <li class="ejectors__list__item">
-              Легко внедряется на существующие установки
-            </li>
-            <li class="ejectors__list__item">
-              Конструктивная простота и надежность
-            </li>
-            <li class="ejectors__list__item">
-              Высокая взрывопожаробезопасность
-            </li>
-          </ul>
-        </div>
-
-        <p class="ejectors__resume">
-          Благодаря перечисленным выше чертам эжекторы нашли широкое применение
-          в технике.
-        </p>
-      </section>
+      <section id="contacts" class="section"></section> -->
     </main>
-    <hr class="shadow-line" />
-    <footer id="contacts">
+    <!-- <footer class="footer">
       <div class="footer__container">
         <div>
           <h3 class="section__header footer__header">Свяжитесь с нами</h3>
@@ -707,8 +682,8 @@
           </a>
         </div>
       </div>
-    </footer>
-    <button
+    </footer> -->
+    <!-- <button
       class="btn-up"
       type="button"
       title="Кнопка Наверх"
@@ -726,7 +701,7 @@
           d="M318 177.5c3.8-8.8 2-19-4.6-26l-136-144C172.9 2.7 166.6 0 160 0s-12.9 2.7-17.4 7.5l-136 144c-6.6 7-8.4 17.2-4.6 26S14.4 192 24 192H96l0 288c0 17.7 14.3 32 32 32h64c17.7 0 32-14.3 32-32l0-288h72c9.6 0 18.2-5.7 22-14.5z"
         />
       </svg>
-    </button>
+    </button> -->
     <script defer type="module" src="./src/js/main.js"></script>
   </body>
 </html>

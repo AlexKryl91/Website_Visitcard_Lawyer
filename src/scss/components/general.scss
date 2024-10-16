@@ -2,36 +2,35 @@ html {
   scroll-behavior: smooth;
   scrollbar-gutter: stable;
 
+  $width-scrl: 8px;
+
   &::-webkit-scrollbar {
-    width: 8px;
+    width: $width-scrl;
   }
 
   // Track
   &::-webkit-scrollbar-track {
-    background: var(--color-bg-footer-end);
+    background: var(--color-ink-0);
   }
 
   // Handle
   &::-webkit-scrollbar-thumb {
-    background: var(--color-bg-darkblue);
-    border-radius: var(--border-radius-small);
-    border-radius: 6px;
+    background: var(--color-ink-1);
+    border-radius: $width-scrl;
 
     &:hover {
-      background: var(--bg-section);
+      background: var(--color-ink-2);
     }
   }
 }
 
 body {
   background: var(--bg-body);
-  background-repeat: no-repeat;
-  background-size: cover;
 
-  font-family: var(--font-family-base);
+  font-family: var(--font-family-text);
   font-weight: 400;
   font-size: 16px;
-  color: var(--color-text-base);
+  color: var(--color-white);
 
   overflow-x: hidden;
 }
@@ -39,7 +38,7 @@ body {
 a,
 a:visited,
 a:focus {
-  color: var(--color-text-base);
+  color: var(--color-white);
 }
 
 ul {

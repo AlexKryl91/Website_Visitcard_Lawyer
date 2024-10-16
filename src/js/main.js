@@ -1,18 +1,18 @@
 import '../scss/style.scss';
 
 // Preloader mask
-// const preload = document.querySelector('.preloader');
+const preload = document.querySelector('.preloader');
 
-// window.addEventListener('load', () => {
-//   preload.remove();
-// });
+window.addEventListener('load', () => {
+  preload.remove();
+});
 
 // URL Hash remove
-// window.addEventListener('hashchange', () => {
-//   console.log('HASH IS CHANGED!!!');
-//   const pureLocation = location.href.replace(/#.*/, '');
-//   history.replaceState(null, null, pureLocation);
-// });
+window.addEventListener('hashchange', () => {
+  console.log('HASH IS CHANGED!!!');
+  const pureLocation = location.href.replace(/#.*/, '');
+  history.replaceState(null, null, pureLocation);
+});
 
 // Button "To top"
 // const upBtn = document.querySelector('.btn-up');
