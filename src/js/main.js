@@ -15,31 +15,31 @@ window.addEventListener('hashchange', () => {
 });
 
 // Button "To top"
-// const upBtn = document.querySelector('.btn-up');
+const upBtn = document.querySelector('.btn-up');
 
-// document.addEventListener('scroll', () => {
-//   upBtn.classList.toggle('btn-up_visible', window.scrollY >= 750);
-// });
+document.addEventListener('scroll', () => {
+  upBtn.classList.toggle('btn-up_visible', window.scrollY >= 900);
+});
 
-// upBtn.addEventListener('click', () => {
-//   window.scrollTo(0, 0);
-// });
+upBtn.addEventListener('click', () => {
+  window.scrollTo(0, 0);
+});
 
 // Burger and Mobile menu control
-// const burgerBtn = document.querySelector('.burger-btn');
-// const burgerMenu = document.querySelector('.burger-menu');
-// const html = document.querySelector('html');
+const burgerBtn = document.querySelector('.burger-btn');
+const burgerMenu = document.querySelector('.burger-menu');
+const html = document.querySelector('html');
 
-// burgerBtn.addEventListener('click', () => {
-//   burgerBtn.classList.toggle('open');
-//   html.classList.toggle('hidden-scrollbar');
-//   burgerMenu.classList.toggle('burger-menu_visible');
-// });
+burgerBtn.addEventListener('click', () => {
+  burgerBtn.classList.toggle('open');
+  html.classList.toggle('hidden-scrollbar');
+  burgerMenu.classList.toggle('burger-menu_visible');
+});
 
-// burgerMenu.addEventListener('click', (e) => {
-//   if (e.target.closest('a')) {
-//     burgerBtn.classList.toggle('open');
-//     html.classList.toggle('hidden-scrollbar');
-//     burgerMenu.classList.toggle('burger-menu_visible');
-//   }
-// });
+burgerMenu.addEventListener('click', (e) => {
+  if (e.target.closest('a')) {
+    burgerBtn.classList.toggle('open');
+    html.classList.toggle('hidden-scrollbar');
+    burgerMenu.classList.toggle('burger-menu_visible');
+  }
+});

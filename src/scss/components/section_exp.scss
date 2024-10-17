@@ -3,6 +3,8 @@
 
   .exp__list {
     width: 100%;
+    max-width: var(--container-width);
+    margin-inline: auto;
 
     &__item {
       position: relative;
@@ -13,14 +15,16 @@
       &:last-of-type {
         margin-bottom: 0;
       }
-    }
 
-    .item-corner {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 28px;
-      height: 28px;
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 28px;
+        height: 28px;
+        background: url('/img/decoration_corner.svg');
+      }
     }
 
     .item-container {
@@ -55,6 +59,7 @@
 
     .h-card {
       width: 280px;
+      min-width: 280px;
       height: 120px;
     }
 
@@ -70,6 +75,7 @@
 
     .item-text {
       max-width: 630px;
+      padding-block: 20px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -77,19 +83,44 @@
 
       font-size: 18px;
       font-weight: 300;
+      line-height: 1.2;
 
-      p {
-        line-height: 1.2;
+      a {
+        font-weight: bold;
+        transition: color var(--transition-duration);
+      }
 
-        a {
-          font-weight: bold;
-          transition: color var(--transition-duration);
+      &__list li {
+        position: relative;
+        padding-left: 30px;
+        margin-bottom: 20px;
 
-          &:hover {
-            color: var(--color-ink-1);
-          }
+        &::before {
+          content: '';
+          position: absolute;
+          top: 5px;
+          left: 0;
+          background: var(--color-beige-3);
+          height: 12px;
+          width: 12px;
+          border-radius: 50%;
         }
       }
     }
+
+    .large {
+      padding-block: 40px 20px;
+      justify-content: flex-start;
+      row-gap: 20px;
+    }
+  }
+
+  .exp__decal {
+    position: absolute;
+    left: calc(50% + 20px);
+    bottom: 0;
+    pointer-events: none;
+    mix-blend-mode: soft-light;
+    opacity: 0.2;
   }
 }

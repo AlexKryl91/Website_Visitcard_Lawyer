@@ -1,11 +1,9 @@
 main {
   width: 100%;
-  // max-width: var(--desktop-max-width);
-  // margin: auto;
 }
 
 @import './section_intro.scss';
 @import './sections.scss';
 @import './section_exp.scss';
-// @import './section_spec.scss';
-// @import './section_contacts.scss';
+@import './section_spec.scss';
+@import './section_contacts.scss';

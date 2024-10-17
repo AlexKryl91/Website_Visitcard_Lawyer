@@ -1,4 +1,5 @@
 .section {
+  position: relative;
   width: 100%;
   padding: 65px var(--side-spacing) 120px;
 
@@ -26,5 +27,15 @@
   }
   &__stripe_light {
     background: var(--bg-stripe-light);
+  }
+
+  .decoration-corner {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .decoration-corner.light {
+    fill: var(--color-beige-4);
   }
 }

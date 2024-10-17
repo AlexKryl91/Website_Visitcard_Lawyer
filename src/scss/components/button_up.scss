@@ -3,23 +3,23 @@
   width: 60px;
   height: 60px;
   padding: 10px;
-  border-radius: 16px;
+  border-radius: 10px 20px;
   bottom: 30px;
   right: 30px;
-  background: var(--color-bg-darkblue);
+  background: var(--color-beige-6);
   z-index: 999;
   opacity: 0;
   pointer-events: none;
   transition: opacity var(--transition-duration);
+  box-shadow: var(--shadow-card-dark);
 
   &__arrow {
     width: 100%;
     height: 100%;
-    fill: var(--color-points-light);
   }
 }
 
 .btn-up_visible {
-  opacity: 0.5;
+  opacity: 0.7;
   pointer-events: all;
 }

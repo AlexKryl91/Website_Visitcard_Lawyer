@@ -32,6 +32,9 @@
         max-width: 100px;
         color: var(--color-ink-1);
         text-transform: uppercase;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
 
         &__main {
           font-family: var(--font-family-accent);
@@ -68,10 +71,6 @@
           background: var(--color-beige-4);
           transition: width var(--transition-duration);
         }
-
-        &:hover::after {
-          width: 100%;
-        }
       }
 
       &__link {
@@ -81,10 +80,6 @@
         align-items: center;
         transition: all var(--transition-duration);
         color: var(--color-ink-1);
-
-        &:hover {
-          color: var(--color-beige-4);
-        }
       }
     }
 
@@ -92,10 +87,6 @@
       font-weight: bold;
       color: var(--color-beige-7);
       transition: color var(--transition-duration);
-
-      &:hover {
-        color: var(--color-dirty-blue);
-      }
     }
   }
 }
