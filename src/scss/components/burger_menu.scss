@@ -7,7 +7,6 @@
     width: 100%;
     max-width: 400px;
     height: 100dvh;
-    // line-height: 1.2;
     background: var(--color-white);
     transition: transform var(--transition-duration);
     transform: translateX(0);
@@ -30,7 +29,7 @@
     }
 
     &_visible {
-      transform: translateX(-100dvw);
+      transform: translateX(-100%);
 
       &::before {
         content: '';
