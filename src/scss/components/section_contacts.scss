@@ -1,7 +1,6 @@
 #contacts {
   background: var(--color-white);
   box-shadow: var(--shadow-section);
-  max-width: var();
   margin-inline: auto;
 
   .contacts__container {
@@ -12,6 +11,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 50px 26px;
     color: var(--color-ink-1);
 
     .address {
@@ -75,7 +75,8 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        column-gap: 70px;
+        column-gap: 30px;
+        padding-inline: 50px;
 
         &__icon {
           mix-blend-mode: multiply;

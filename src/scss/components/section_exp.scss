@@ -15,16 +15,6 @@
       &:last-of-type {
         margin-bottom: 0;
       }
-
-      &::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 28px;
-        height: 28px;
-        background: url('/img/decoration_corner.svg');
-      }
     }
 
     .item-container {
@@ -32,7 +22,7 @@
       margin-inline: 70px;
       display: flex;
       flex-direction: row;
-      gap: 30px 80px;
+      column-gap: 80px;
     }
 
     .item-card {
